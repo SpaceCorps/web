@@ -28,72 +28,50 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/3 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="max-w-4xl mx-auto">
+      <div
+        className="absolute left-0 top-0 z-10 pr-8 sm:pr-12 lg:pr-16 py-20 sm:py-32 lg:py-40"
+        style={{ paddingLeft: "10%" }}
+      >
+        <div className="max-w-2xl text-left">
           {/* Badge */}
           <div className="mb-8">
-            <Badge variant="outline" className="px-4 py-2 text-sm font-medium">
+            <Badge
+              variant="outline"
+              className="px-4 py-2 text-sm font-medium bg-white text-black border-white"
+            >
               Building the Future of Business Software
             </Badge>
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
-            Revolutionize Your Business
-            <br />
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              with AI-Powered
-            </span>
-            <br />
-            Development
+          <h1 className="text-5xl font-extrabold text-white mb-6">
+            Revolutionize Your Business with{" "}
+            <span className="text-green-400">AI-Powered</span> Development
           </h1>
 
           {/* Description */}
-          <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-400 mb-8 max-w-3xl leading-relaxed">
             Get fully secure, self-owned, ISO-compliant business applications
-            delivered in{" "}
-            <span className="font-semibold text-white">
-              minutes, not months
-            </span>
-            . Our cutting-edge Ivy Framework combined with advanced AI tools
-            delivers enterprise-grade software at 50% of competitor pricing —
-            often just 10% of traditional costs.
+            delivered in minutes, not months . Our cutting-edge Ivy Framework
+            combined with advanced AI tools delivers enterprise-grade software
+            at 50% of competitor pricing — often just 10% of traditional costs.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" className="px-8 py-3 text-lg font-semibold">
+          <div className="flex flex-col sm:flex-row gap-4 items-start mb-12">
+            <Button
+              size="lg"
+              className="px-8 py-3 text-lg font-semibold bg-white text-black hover:bg-gray-300"
+            >
               Get Started Today
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="px-8 py-3 text-lg font-semibold"
+              className="px-8 py-3 text-lg font-semibold bg-primary/10 text-white hover:bg-primary/20"
             >
               View Portfolio
             </Button>
-          </div>
-
-          {/* Stats or Additional Info */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto text-center">
-            <div>
-              <div className="text-2xl sm:text-3xl font-bold text-white mb-2">
-                10x
-              </div>
-              <div className="text-sm text-gray-300">Faster Development</div>
-            </div>
-            <div>
-              <div className="text-2xl sm:text-3xl font-bold text-white mb-2">
-                90%
-              </div>
-              <div className="text-sm text-gray-300">Cost Reduction</div>
-            </div>
-            <div>
-              <div className="text-2xl sm:text-3xl font-bold text-white mb-2">
-                100%
-              </div>
-              <div className="text-sm text-gray-300">ISO Compliant</div>
-            </div>
           </div>
         </div>
       </div>
