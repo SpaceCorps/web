@@ -1,5 +1,7 @@
 # Development Instructions
 
+For using shadcn, you have access to Shadcn MCP server
+
 ## Technology Stack
 
 - **UI Framework**: React (latest)
