@@ -1,5 +1,4 @@
 import React from "react";
-import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { Check } from "lucide-react";
 import {
