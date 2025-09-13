@@ -124,7 +124,7 @@ const PricingSection: React.FC<PricingSectionProps> = () => {
           </div>
         </div>
 
-        {/* Bottom CTA */}
+        {/* Bottom CTA
         <div className="text-center mt-16">
           <div className="max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold text-foreground mb-4">
@@ -136,7 +136,7 @@ const PricingSection: React.FC<PricingSectionProps> = () => {
               </Button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
