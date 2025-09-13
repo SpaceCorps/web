@@ -61,7 +61,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = () => {
               >
                 <CardContent className="p-0">
                   <div className="mb-4 flex justify-center">
-                    <IconComponent className="w-8 h-8 text-primary" />
+                    <IconComponent className="w-10 h-10 text-primary" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">
                     {feature.title}

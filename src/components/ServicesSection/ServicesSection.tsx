@@ -66,7 +66,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = () => {
                 className="h-full hover:shadow-lg transition-shadow duration-300 border-border/50 bg-card/50 backdrop-blur-sm"
               >
                 <CardHeader className="pb-4">
-                  <IconComponent className="w-6 h-6 text-primary" />
+                  <IconComponent className="w-10 h-10 text-primary" />
                   <CardTitle className="text-xl font-semibold text-foreground">
                     {service.title}
                   </CardTitle>
