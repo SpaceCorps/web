@@ -1,14 +1,10 @@
 import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
-import { HeroSection } from "./components/HeroSection";
-import { FeaturesSection } from "./components/FeaturesSection";
-import { DetailedFeaturesSection } from "./components/DetailedFeaturesSection";
-import { ServicesSection } from "./components/ServicesSection";
-import { PricingSection } from "./components/PricingSection";
-import { PortfolioSection } from "./components/PortfolioSection";
-import { TestimonialsSection } from "./components/TestimonialsSection";
-import { CTASection } from "./components/CTASection";
 import { Footer } from "./components/Footer";
+import { Home } from "./pages/Home";
+import { Portfolio } from "./pages/Portfolio";
+import { About } from "./pages/About";
 
 function App() {
   const [isDark, setIsDark] = useState(false);
@@ -38,20 +34,17 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Header isDark={isDark} toggleTheme={toggleTheme} />
-      <main>
-        <HeroSection />
-        <FeaturesSection />
-        <DetailedFeaturesSection />
-        <ServicesSection />
-        <PricingSection />
-        <PortfolioSection />
-        <TestimonialsSection />
-        <CTASection />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-background text-foreground">
+        <Header isDark={isDark} toggleTheme={toggleTheme} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
