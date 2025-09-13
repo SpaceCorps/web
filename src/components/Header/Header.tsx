@@ -15,53 +15,68 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-lg ${
+        isDark ? "bg-black/10" : "bg-white/60"
+      }`}
+      style={{
+        backdropFilter: "blur(4px)",
+      }}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 mr-8">
             <Link
               to="/"
-              className="text-xl font-bold text-foreground hover:text-foreground/80 transition-colors"
+              className="text-foreground hover:text-foreground/80 transition-colors"
+              style={{
+                fontWeight: 600,
+                fontSize: "20px",
+              }}
             >
               SpaceCorps Technology
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.label}
-                to={item.href}
-                className={`transition-colors duration-200 ${
-                  location.pathname === item.href
-                    ? "text-foreground font-medium"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
+          {/* Desktop Navigation - positioned to the right */}
+          <div className="flex-1 flex justify-end items-center">
+            <nav className="hidden md:flex items-center space-x-8">
+              {navItems.map((item) => (
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className={`transition-colors duration-200 ${
+                    location.pathname === item.href
+                      ? `underline decoration-2 underline-offset-4 ${
+                          isDark ? "text-white" : "text-black"
+                        }`
+                      : `hover:opacity-70 ${
+                          isDark ? "text-white" : "text-black"
+                        }`
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
 
-          {/* Desktop Actions */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleTheme}
-              className="text-muted-foreground hover:text-foreground"
-            >
-              {isDark ? (
-                <Sun className="h-5 w-5" />
-              ) : (
-                <Moon className="h-5 w-5" />
-              )}
-            </Button>
-            <Button variant="outline" size="sm">
-              Get Started
-            </Button>
+            {/* Desktop Actions */}
+            <div className="hidden md:flex items-center space-x-4 ml-8">
+              <Button size="sm">Get Started</Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={toggleTheme}
+                className="text-muted-foreground hover:text-foreground"
+              >
+                {isDark ? (
+                  <Sun className="h-5 w-5" />
+                ) : (
+                  <Moon className="h-5 w-5" />
+                )}
+              </Button>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -107,6 +122,10 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
+                  style={{
+                    fontWeight: 500,
+                    fontSize: "14px",
+                  }}
                 >
                   {item.label}
                 </Link>
