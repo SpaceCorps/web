@@ -64,14 +64,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
           <div className="flex flex-col sm:flex-row gap-4 items-start mb-12">
             <Button
               size="lg"
-              className="px-8 py-3 text-lg font-semibold bg-white text-black hover:bg-gray-100"
+              className="px-8 py-3 text-lg font-semibold bg-white text-black hover:bg-gray-300"
             >
               Get Started Today
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="px-8 py-3 text-lg font-semibold border-white text-white hover:bg-white hover:text-black"
+              className="px-8 py-3 text-lg font-semibold border-white text-white hover:bg-white hover:text-gray-100"
             >
               View Portfolio
             </Button>
