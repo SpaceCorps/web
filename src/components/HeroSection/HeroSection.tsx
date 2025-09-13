@@ -68,7 +68,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
             <Button
               variant="outline"
               size="lg"
-              className="px-8 py-3 text-lg font-semibold border-white text-white hover:bg-white hover:text-gray-100"
+              className="px-8 py-3 text-lg font-semibold bg-primary/10 text-white hover:bg-primary/20"
             >
               View Portfolio
             </Button>
