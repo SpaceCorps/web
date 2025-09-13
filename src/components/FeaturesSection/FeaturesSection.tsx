@@ -3,7 +3,7 @@ import { Card, CardContent } from "../ui/card";
 import { Zap, DollarSign, Shield, CheckCircle, Terminal } from "lucide-react";
 import { FeaturesSectionProps } from "./FeaturesSection.ts";
 
-const FeaturesSection: React.FC<FeaturesSectionProps> = ({}) => {
+const FeaturesSection: React.FC<FeaturesSectionProps> = () => {
   const features = [
     {
       icon: Zap,
@@ -61,9 +61,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({}) => {
               >
                 <CardContent className="p-0">
                   <div className="mb-4 flex justify-center">
-                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                      <IconComponent className="w-8 h-8 text-primary" />
-                    </div>
+                    <IconComponent className="w-10 h-10 text-primary" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">
                     {feature.title}

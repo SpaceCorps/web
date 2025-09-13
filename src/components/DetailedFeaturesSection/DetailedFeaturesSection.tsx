@@ -3,9 +3,7 @@ import { Card, CardContent } from "../ui/card";
 import { Code, Bot, Server, Shield } from "lucide-react";
 import { DetailedFeaturesSectionProps } from "./DetailedFeaturesSection.ts";
 
-const DetailedFeaturesSection: React.FC<
-  DetailedFeaturesSectionProps
-> = ({}) => {
+const DetailedFeaturesSection: React.FC<DetailedFeaturesSectionProps> = () => {
   const features = [
     {
       icon: Code,
@@ -84,9 +82,7 @@ const DetailedFeaturesSection: React.FC<
                   >
                     <CardContent className="p-4">
                       <div className="flex items-start space-x-4">
-                        <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                          <IconComponent className="w-6 h-6 text-primary" />
-                        </div>
+                        <IconComponent className="w-6 h-6 text-primary" />
                         <div>
                           <h3 className="text-lg font-semibold text-foreground mb-2">
                             {feature.title}
