@@ -5,7 +5,7 @@ import { Badge } from "../ui/badge";
 import { Check, Clock, Bot, Zap, ArrowRight } from "lucide-react";
 import { PricingSectionProps } from "./PricingSection.ts";
 
-const PricingSection: React.FC<PricingSectionProps> = ({}) => {
+const PricingSection: React.FC<PricingSectionProps> = () => {
   const advantages = [
     {
       icon: Clock,
@@ -61,9 +61,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({}) => {
                 const IconComponent = advantage.icon;
                 return (
                   <div key={index} className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <IconComponent className="w-6 h-6 text-primary" />
-                    </div>
+                    <IconComponent className="w-6 h-6 text-primary" />
                     <div>
                       <h4 className="text-lg font-semibold text-foreground mb-2">
                         {advantage.title}
