@@ -31,7 +31,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
         key={index}
         className={`w-5 h-5 ${
           index < rating
-            ? "text-yellow-400 fill-yellow-400"
+            ? "text-foreground fill-foreground"
             : "text-gray-300 dark:text-gray-600"
         }`}
       />
