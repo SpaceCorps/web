@@ -31,8 +31,8 @@ src/components/
 - Example:
 
 ```typescript
-export { default } from './ComponentName';
-export type { ComponentNameProps } from './ComponentName.ts';
+export { default } from "./ComponentName";
+export type { ComponentNameProps } from "./ComponentName.ts";
 ```
 
 #### `ComponentName.tsx`
@@ -78,12 +78,12 @@ export interface ButtonProps {
 // components/Button/Button.tsx
 import { ButtonProps } from './Button.ts';
 
-export default function Button({ 
-  variant = 'primary', 
-  size = 'md', 
-  disabled = false, 
-  children, 
-  onClick 
+export default function Button({
+  variant = 'primary',
+  size = 'md',
+  disabled = false,
+  children,
+  onClick
 }: ButtonProps) {
   return (
     <button
@@ -106,7 +106,7 @@ export type { ButtonProps } from './Button.ts';
 With this structure, components can be imported cleanly:
 
 ```typescript
-import Button, { ButtonProps } from '@/components/Button';
+import Button, { ButtonProps } from "@/components/Button";
 ```
 
 ## Standards to Follow
