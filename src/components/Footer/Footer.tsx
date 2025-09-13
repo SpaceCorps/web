@@ -22,28 +22,28 @@ const Footer: React.FC<FooterProps> = ({}) => {
   ];
 
   return (
-    <footer className="bg-card border-t border-border">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-black border-t border-gray-800">
+      <div className="w-full py-12">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 px-8 max-w-7xl mx-auto">
           {/* Company Info */}
-          <div>
+          <div className="flex-shrink-0 text-center md:text-left">
             <h3 className="text-lg font-semibold text-foreground mb-4">
               SpaceCorps Technology
             </h3>
-            <p className="text-muted-foreground mb-4 leading-relaxed">
+            <p className="text-muted-foreground mb-4 leading-relaxed max-w-sm">
               Building the future of business software with AI-powered
               development. Delivering enterprise-grade applications in days, not
               months.
             </p>
-            <div className="flex space-x-4">
-              <Mail className="w-5 h-5 text-muted-foreground hover:text-foreground cursor-pointer transition-colors" />
-              <Github className="w-5 h-5 text-muted-foreground hover:text-foreground cursor-pointer transition-colors" />
-              <Globe className="w-5 h-5 text-muted-foreground hover:text-foreground cursor-pointer transition-colors" />
+            <div className="flex space-x-4 justify-center md:justify-start">
+              <Mail className="w-5 h-5 text-white hover:text-gray-300 cursor-pointer transition-colors" />
+              <Github className="w-5 h-5 text-white hover:text-gray-300 cursor-pointer transition-colors" />
+              <Globe className="w-5 h-5 text-white hover:text-gray-300 cursor-pointer transition-colors" />
             </div>
           </div>
 
           {/* Services */}
-          <div>
+          <div className="flex-shrink-0 text-center md:text-left">
             <h3 className="text-lg font-semibold text-foreground mb-4">
               Services
             </h3>
@@ -62,7 +62,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="flex-shrink-0 text-center md:text-left">
             <h3 className="text-lg font-semibold text-foreground mb-4">
               Contact
             </h3>
@@ -80,7 +80,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-border mt-8 pt-8 text-center">
+        <div className="mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm">
             © 2025 SpaceCorps Technology OÜ. All rights reserved.
           </p>
