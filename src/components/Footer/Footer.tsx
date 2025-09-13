@@ -11,9 +11,14 @@ const Footer: React.FC<FooterProps> = ({}) => {
   ];
 
   const contactInfo = [
-    { label: "Email", value: "mikael@spacecorpstechnology.com", icon: Mail },
+    { label: "Email", value: "info@spacecorpstechnology.com", icon: Mail },
     { label: "Website", value: "spacecorpstechnology.com", icon: Globe },
-    { label: "VAT", value: "EE102897221", icon: null },
+    {
+      label: "VAT",
+      value: "ID: 17317965, VAT: EE102897221",
+      icon: null,
+    },
+    { label: "Bank", value: "IBAN: EE687700771012100272", icon: null },
   ];
 
   return (
@@ -27,8 +32,8 @@ const Footer: React.FC<FooterProps> = ({}) => {
             </h3>
             <p className="text-muted-foreground mb-4 leading-relaxed">
               Building the future of business software with AI-powered
-              development. Delivering enterprise-grade applications in minutes,
-              not months.
+              development. Delivering enterprise-grade applications in days, not
+              months.
             </p>
             <div className="flex space-x-4">
               <Mail className="w-5 h-5 text-muted-foreground hover:text-foreground cursor-pointer transition-colors" />
@@ -77,7 +82,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 SpaceCorps Technology. All rights reserved.
+            © 2025 SpaceCorps Technology OÜ. All rights reserved.
           </p>
         </div>
       </div>
