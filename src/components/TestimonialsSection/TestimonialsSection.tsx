@@ -7,7 +7,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
   const testimonials = [
     {
       rating: 5,
-      text: "SpaceCorps Technology delivered our complete business management system in under an hour. What would have taken our development team 6 months was completed in 45 minutes.",
+      text: "SpaceCorps Technology helped us replace Jira. It took them less than a day to deliver a prototype!",
       author: "Tech Startup CEO",
       company: "Tech Startup",
     },

@@ -4,7 +4,7 @@ import { CTASectionProps } from "./CTASection.ts";
 
 const CTASection: React.FC<CTASectionProps> = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary/10 via-primary/5 to-background">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Heading */}
