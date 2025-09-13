@@ -9,37 +9,37 @@ const ServicesSection: React.FC<ServicesSectionProps> = () => {
       icon: Rocket,
       title: "Rapid Application Development",
       description:
-        "Transform your business processes into fully-functional applications in minutes. Our AI-powered Ivy Framework handles everything from user interface design to backend architecture.",
+        "We offer fastest development time with industry leading security and quality. We can both create new applications from scratch or update existing ones towards modern standards.",
     },
     {
       icon: Lock,
       title: "Enterprise Security & Compliance",
       description:
-        "Every application we build includes enterprise-grade security features and ISO compliance standards built-in from day one. Your data stays yours.",
+        "Every application we build includes enterprise-grade security features and ISO compliance standards built-in from day one. You manage your own data.",
     },
     {
       icon: Users,
       title: "Authentication & User Management",
       description:
-        "Complete authentication systems with role-based access control, multi-factor authentication, and seamless user management.",
+        "We support various authentication and authorization solutions. Seamplessly integrate with your existing systems and databases.",
     },
     {
       icon: Database,
       title: "Database Design & Management",
       description:
-        "Optimized database architectures designed for performance, scalability, and security. We handle everything from design to deployment.",
+        "We use AI to ~100x faster understand your data and design the best applications for your business. Our tools allow us to easily connect several data sources together.",
     },
     {
       icon: Cloud,
-      title: "Hosting & Infrastructure",
+      title: "Tool Hosting & Infrastructure",
       description:
-        "Reliable, secure hosting solutions with automatic scaling, backup systems, and 99.9% uptime guarantee.",
+        "With us, you have full flexibility to choose your own hosting and infrastructure. We support various cloud providers and self-hosted solutions. We can also host for you.",
     },
     {
       icon: Wrench,
       title: "Ongoing Support & Maintenance",
       description:
-        "Comprehensive support packages ensuring your applications stay current, secure, and optimized.",
+        "We will be your dedicated team of developers and maintainers. We will be available to you for any questions or updates you need. We also give you full ownership of your source code.",
     },
   ];
 
