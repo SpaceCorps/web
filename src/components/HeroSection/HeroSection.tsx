@@ -44,10 +44,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
           </div>
 
           {/* Main Heading */}
-          <h1
-            className="text-5xl font-extrabold text-white mb-6"
-            style={{ fontFamily: "Inter, sans-serif" }}
-          >
+          <h1 className="text-5xl font-extrabold text-white mb-6">
             Revolutionize Your Business with{" "}
             <span className="text-green-400">AI-Powered</span> Development
           </h1>
