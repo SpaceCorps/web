@@ -136,9 +136,6 @@ const PricingSection: React.FC<PricingSectionProps> = ({}) => {
               <Button size="lg" className="px-8">
                 Get Free Cost Analysis
               </Button>
-              <Button variant="outline" size="lg" className="px-8">
-                View Portfolio
-              </Button>
             </div>
           </div>
         </div>
