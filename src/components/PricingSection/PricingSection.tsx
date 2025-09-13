@@ -132,17 +132,12 @@ const PricingSection: React.FC<PricingSectionProps> = ({}) => {
             <h3 className="text-2xl font-bold text-foreground mb-4">
               Ready to Save 90% on Your Next Project?
             </h3>
-            <p className="text-muted-foreground mb-8">
-              Get a detailed cost comparison and see exactly how much you could
-              save with SpaceCorps Technology's revolutionary development
-              approach.
-            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="px-8">
                 Get Free Cost Analysis
               </Button>
               <Button variant="outline" size="lg" className="px-8">
-                View Case Studies
+                View Portfolio
               </Button>
             </div>
           </div>
