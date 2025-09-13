@@ -9,23 +9,27 @@ const PricingSection: React.FC<PricingSectionProps> = ({}) => {
   const advantages = [
     {
       icon: Clock,
-      title: "10x Faster Development",
-      description: "Reduced labor costs passed to you",
+      title: "~10x Faster Development",
+      description:
+        "Reduced labor costs passed to you. We simply need a lot less time to do most of the tasks thanks to our stack.",
     },
     {
       icon: Bot,
       title: "AI Automation",
-      description: "Minimal manual coding required",
+      description:
+        "Minimal manual coding required. We use AI tools that adapt to your needs. We use smart automations to reduce all of our repetitive tasks.",
     },
     {
       icon: Zap,
       title: "Streamlined Process",
-      description: "No lengthy requirement gathering or revision cycles",
+      description:
+        "No lengthy requirement gathering or revision cycles. We have a rapid capability to deliver MVPs.",
     },
     {
       icon: ArrowRight,
       title: "Direct Delivery",
-      description: "No middlemen or markup chains",
+      description:
+        "We love fun projects. We will deliver your project directly to you. No middlemen or markup chains.",
     },
   ];
 
@@ -34,6 +38,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({}) => {
     "Typical savings of 90% off market rates",
     "Fixed-price quotes with no hidden costs",
     "Complete ownership of source code included",
+    "Flexible maintanance and support packages",
   ];
 
   return (
@@ -45,7 +50,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({}) => {
             Transparent, Competitive Pricing
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Why we're 90% less expensive than traditional development
+            Why we're ~90% less expensive than traditional development
           </p>
         </div>
 
@@ -53,7 +58,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({}) => {
           {/* Left Side - Why We're Less Expensive */}
           <div>
             <h3 className="text-2xl font-bold text-foreground mb-8">
-              How We Deliver 90% Cost Savings:
+              How We Deliver ~90% Cost Savings:
             </h3>
 
             <div className="space-y-6">
