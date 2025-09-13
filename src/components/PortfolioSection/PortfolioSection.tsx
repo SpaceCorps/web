@@ -18,7 +18,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = () => {
     {
       title: "Medical clinic record management system",
       category: "Professional Services",
-      developmentTime: "2 weeks",
+      developmentTime: "10 days",
       ourCost: "5,000",
       traditionalCost: "50,000",
       features:
