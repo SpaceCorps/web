@@ -29,11 +29,12 @@ src/components/
 #### `index.ts`
 
 - Main export file for the component
-- Should export the default component and any related types
+- Should export the named component and any related types
+- **CRITICAL**: Use named exports only, not default exports
 - Example:
 
 ```typescript
-export { default } from "./ComponentName";
+export { ComponentName } from "./ComponentName";
 export type { ComponentNameProps } from "./ComponentName.ts";
 ```
 
@@ -42,6 +43,7 @@ export type { ComponentNameProps } from "./ComponentName.ts";
 - Contains the React component implementation
 - Imports types from the corresponding `.ts` file
 - Focuses on component logic and JSX structure
+- **CRITICAL**: Must use named exports only, never default exports
 
 #### `ComponentName.ts`
 
@@ -64,6 +66,7 @@ export type { ComponentNameProps } from "./ComponentName.ts";
 4. **Consistent Naming**: Use PascalCase for component names and folders
 5. **Single Responsibility**: Each file should have a clear, single purpose
 6. **Export Pattern**: Always use the index.ts pattern for clean imports
+7. **CRITICAL: Named Exports Only**: Always use named exports instead of default exports to avoid TypeScript compilation issues
 
 ### Example Implementation
 
@@ -78,15 +81,16 @@ export interface ButtonProps {
 }
 
 // components/Button/Button.tsx
+import React from 'react';
 import { ButtonProps } from './Button.ts';
 
-export default function Button({
+const Button: React.FC<ButtonProps> = ({
   variant = 'primary',
   size = 'md',
   disabled = false,
   children,
   onClick
-}: ButtonProps) {
+}) => {
   return (
     <button
       className={`btn btn-${variant} btn-${size}`}
@@ -96,20 +100,25 @@ export default function Button({
       {children}
     </button>
   );
-}
+};
+
+// CRITICAL: Use named export only
+export { Button };
 
 // components/Button/index.ts
-export { default } from './Button';
+export { Button } from './Button';
 export type { ButtonProps } from './Button.ts';
 ```
 
 ### Import Usage
 
-With this structure, components can be imported cleanly:
+With this structure, components can be imported cleanly using named imports:
 
 ```typescript
-import Button, { ButtonProps } from "@/components/Button";
+import { Button, ButtonProps } from "@/components/Button";
 ```
+
+**CRITICAL**: Always use named imports, never default imports to avoid TypeScript compilation issues.
 
 ## Standards to Follow
 
@@ -119,3 +128,4 @@ import Button, { ButtonProps } from "@/components/Button";
 - Follow React best practices and hooks patterns
 - Use Tailwind CSS 4 utility classes effectively
 - Integrate shadcn/ui components as the foundation for custom components
+- **CRITICAL**: Always use named exports and named imports - never use default exports/imports
