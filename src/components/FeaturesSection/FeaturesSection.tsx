@@ -7,15 +7,15 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({}) => {
   const features = [
     {
       icon: Zap,
-      title: "10x Faster Development",
-      description: "Minutes instead of months",
+      title: "~10x Faster Development",
+      description: "Minutes instead of hours",
       detail: "Reduced labor costs passed to you",
     },
     {
       icon: DollarSign,
-      title: "90% Cost Reduction",
+      title: "~90% Cost Reduction",
       description: "Guaranteed 50% savings",
-      detail: "Typical savings of 90% off market rates",
+      detail: "Typical savings of ~90% off market rates",
     },
     {
       icon: Shield,
@@ -25,7 +25,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({}) => {
     },
     {
       icon: CheckCircle,
-      title: "ISO Compliant",
+      title: "ISO Compliance",
       description: "Built-in compliance from day one",
       detail: "Every application meets enterprise compliance standards",
     },
@@ -33,8 +33,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({}) => {
       icon: Terminal,
       title: "AI-Powered",
       description: "Leveraging cutting-edge AI development tools",
-      detail:
-        "Cutting-edge artificial intelligence for automated code generation",
+      detail: "We use latest AI tools to boost development speed and quality.",
     },
   ];
 
