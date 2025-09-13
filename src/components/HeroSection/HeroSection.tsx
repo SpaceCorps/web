@@ -51,10 +51,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
 
           {/* Description */}
           <p className="text-lg sm:text-xl text-gray-400 mb-8 max-w-3xl leading-relaxed">
-            Get fully secure, self-owned, ISO-compliant business applications
-            delivered in minutes, not months . Our cutting-edge Ivy Framework
-            combined with advanced AI tools delivers enterprise-grade software
-            at 50% of competitor pricing — often just 10% of traditional costs.
+            Get fully secure, ISO-compliant business applications that you own
+            delivered in days, not months. Our cutting-edge AI-first development
+            stack combined with advanced automation tools delivers
+            enterprise-grade software at ~50% of competitor pricing — often at
+            just ~10% of traditional costs.
           </p>
 
           {/* CTA Buttons */}
