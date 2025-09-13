@@ -7,32 +7,33 @@ import { PortfolioSectionProps } from "./PortfolioSection.ts";
 const PortfolioSection: React.FC<PortfolioSectionProps> = () => {
   const projects = [
     {
-      title: "Enterprise Resource Planning Suite",
-      category: "Manufacturing",
-      developmentTime: "45 minutes",
-      ourCost: "15,000",
-      traditionalCost: "350,000",
-      features: "Full ERP functionality, ISO compliance, real-time analytics",
-      savings: "96%",
+      title: "Dog shelter management system",
+      category: "Animal Shelter",
+      developmentTime: "10 hours",
+      ourCost: "1,000",
+      traditionalCost: "5,000",
+      features: "Dashboard, Inventory Management, Donation Management",
+      savings: "80%",
     },
     {
-      title: "Multi-Tenant SaaS Platform",
+      title: "Medical clinic record management system",
       category: "Professional Services",
-      developmentTime: "2 hours",
-      ourCost: "20,000",
-      traditionalCost: "200,000",
+      developmentTime: "2 weeks",
+      ourCost: "5,000",
+      traditionalCost: "50,000",
       features:
-        "Complete SaaS infrastructure, user management, billing integration",
+        "Patient record tracking, AI assisted diagnosis and voice transcription",
       savings: "90%",
     },
     {
-      title: "Document Management System",
-      category: "Healthcare",
-      developmentTime: "90 minutes",
-      ourCost: "8,000",
+      title: "Several payment providers integration",
+      category: "Accounting",
+      developmentTime: "40 hours",
+      ourCost: "10,000",
       traditionalCost: "80,000",
-      features: "HIPAA compliance, advanced search, audit trails",
-      savings: "90%",
+      features:
+        "Dashboard, Invoice Management, Syncronization between multiple providers",
+      savings: "87.5%",
     },
   ];
 
