@@ -15,10 +15,9 @@ const Footer: React.FC<FooterProps> = ({}) => {
     { label: "Website", value: "spacecorpstechnology.com", icon: Globe },
     {
       label: "VAT",
-      value: "ID: 17317965, VAT: EE102897221",
+      value: "VAT: EE102897221",
       icon: null,
     },
-    { label: "Bank", value: "IBAN: EE687700771012100272", icon: null },
   ];
 
   return (
@@ -36,9 +35,31 @@ const Footer: React.FC<FooterProps> = ({}) => {
               months.
             </p>
             <div className="flex space-x-4 justify-center md:justify-start">
-              <Mail className="w-5 h-5 text-white hover:text-gray-300 cursor-pointer transition-colors" />
-              <Github className="w-5 h-5 text-white hover:text-gray-300 cursor-pointer transition-colors" />
-              <Globe className="w-5 h-5 text-white hover:text-gray-300 cursor-pointer transition-colors" />
+              <a
+                href="mailto:info@spacecorpstechnology.com"
+                aria-label="Email us"
+                className="text-white hover:text-gray-300 transition-colors"
+              >
+                <Mail className="w-5 h-5" />
+              </a>
+              <a
+                href="https://github.com/spacecorps"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our GitHub"
+                className="text-white hover:text-gray-300 transition-colors"
+              >
+                <Github className="w-5 h-5" />
+              </a>
+              <a
+                href="https://spacecorpstechnology.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our website"
+                className="text-white hover:text-gray-300 transition-colors"
+              >
+                <Globe className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
@@ -82,7 +103,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 SpaceCorps Technology OÜ. All rights reserved.
+            © 2025 SpaceCorps Technology. All rights reserved.
           </p>
         </div>
       </div>
