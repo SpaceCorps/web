@@ -19,9 +19,9 @@ const OpenSourceSection: React.FC<OpenSourceSectionProps> = () => {
         <Button
           variant="default"
           size="lg"
-          className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90"
+          className="inline-flex items-center gap-2 bg-white text-black hover:bg-gray-100"
         >
-          <Github className="h-5 w-5" />
+          <Github className="h-5 w-5 stroke-3" />
           Visit Our GitHub
         </Button>
       </div>
