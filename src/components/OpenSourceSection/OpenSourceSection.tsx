@@ -16,14 +16,21 @@ const OpenSourceSection: React.FC<OpenSourceSectionProps> = () => {
           team actively contributes to the developer community while building
           cutting-edge solutions for our clients.
         </p>
-        <Button
-          variant="default"
-          size="lg"
-          className="inline-flex items-center gap-2 bg-white text-black hover:bg-gray-100"
+        <a
+          href="https://github.com/spacecorps"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit our GitHub organization"
         >
-          <Github className="h-5 w-5 stroke-3" />
-          Visit Our GitHub
-        </Button>
+          <Button
+            variant="default"
+            size="lg"
+            className="inline-flex items-center gap-2 bg-white text-black hover:bg-gray-100"
+          >
+            <Github className="h-5 w-5 stroke-3" />
+            Visit Our GitHub
+          </Button>
+        </a>
       </div>
     </section>
   );
