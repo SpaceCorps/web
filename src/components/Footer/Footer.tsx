@@ -15,10 +15,9 @@ const Footer: React.FC<FooterProps> = ({}) => {
     { label: "Website", value: "spacecorpstechnology.com", icon: Globe },
     {
       label: "VAT",
-      value: "ID: 17317965, VAT: EE102897221",
+      value: "VAT: EE102897221",
       icon: null,
     },
-    { label: "Bank", value: "IBAN: EE687700771012100272", icon: null },
   ];
 
   return (
