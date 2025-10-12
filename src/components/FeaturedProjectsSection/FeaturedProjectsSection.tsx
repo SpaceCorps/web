@@ -52,9 +52,7 @@ const ProjectCard: React.FC<ProjectCardProps & { index: number }> = ({
         className={`${isEven ? "order-1 lg:order-2" : "order-1 lg:order-1"} space-y-6`}
       >
         <div>
-          <Badge variant="secondary" className="mb-4">
-            {category}
-          </Badge>
+          <Badge variant="secondary">{category}</Badge>
           <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
             {title}
           </h3>
