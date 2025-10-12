@@ -5,7 +5,7 @@ import { OpenSourceSectionProps } from "./OpenSourceSection.ts";
 
 const OpenSourceSection: React.FC<OpenSourceSectionProps> = () => {
   return (
-    <section className="pt-4 pb-10 px-4 sm:px-6 lg:px-8 bg-muted/20">
+    <section className="pt-4 pb-10 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-semibold text-foreground mb-4">
           Our Open Source Contributions
