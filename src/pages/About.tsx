@@ -60,9 +60,9 @@ const About: React.FC = () => {
               {/* Speed Card */}
               <Card className="bg-card border-border">
                 <CardContent className="p-6 text-left">
-                  <div className="w-16 h-16 bg-white/10 rounded-lg flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
                     <svg
-                      className="w-8 h-8 text-white"
+                      className="w-8 h-8 text-primary"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -75,10 +75,10 @@ const About: React.FC = () => {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3">
+                  <h3 className="text-xl font-bold text-foreground mb-3">
                     Speed Without Sacrificing Quality
                   </h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     Fast delivery without sacrificing quality or security
                     standards.
                   </p>
@@ -88,9 +88,9 @@ const About: React.FC = () => {
               {/* Transparent Pricing Card */}
               <Card className="bg-card border-border">
                 <CardContent className="p-6 text-left">
-                  <div className="w-16 h-16 bg-white/10 rounded-lg flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
                     <svg
-                      className="w-8 h-8 text-white"
+                      className="w-8 h-8 text-primary"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -103,10 +103,10 @@ const About: React.FC = () => {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3">
+                  <h3 className="text-xl font-bold text-foreground mb-3">
                     Transparent Pricing
                   </h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     No hidden costs or surprise fees — clear, upfront pricing
                     always.
                   </p>
@@ -116,9 +116,9 @@ const About: React.FC = () => {
               {/* Client Ownership Card */}
               <Card className="bg-card border-border">
                 <CardContent className="p-6 text-left">
-                  <div className="w-16 h-16 bg-white/10 rounded-lg flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
                     <svg
-                      className="w-8 h-8 text-white"
+                      className="w-8 h-8 text-primary"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -131,10 +131,10 @@ const About: React.FC = () => {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3">
+                  <h3 className="text-xl font-bold text-foreground mb-3">
                     Client Ownership
                   </h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     You own your code and data completely — no vendor lock-in.
                   </p>
                 </CardContent>
@@ -143,9 +143,9 @@ const About: React.FC = () => {
               {/* Innovation First Card */}
               <Card className="bg-card border-border">
                 <CardContent className="p-6 text-left">
-                  <div className="w-16 h-16 bg-white/10 rounded-lg flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
                     <svg
-                      className="w-8 h-8 text-white"
+                      className="w-8 h-8 text-primary"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -158,10 +158,10 @@ const About: React.FC = () => {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3">
+                  <h3 className="text-xl font-bold text-foreground mb-3">
                     Innovation First
                   </h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     Always pushing the boundaries of what's possible in software
                     development.
                   </p>
@@ -171,9 +171,9 @@ const About: React.FC = () => {
               {/* Community Focused Card */}
               <Card className="bg-card border-border">
                 <CardContent className="p-6 text-left">
-                  <div className="w-16 h-16 bg-white/10 rounded-lg flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
                     <svg
-                      className="w-8 h-8 text-white"
+                      className="w-8 h-8 text-primary"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -186,10 +186,10 @@ const About: React.FC = () => {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3">
+                  <h3 className="text-xl font-bold text-foreground mb-3">
                     Community Focused
                   </h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     Contributing back to the developer community through open
                     source.
                   </p>
