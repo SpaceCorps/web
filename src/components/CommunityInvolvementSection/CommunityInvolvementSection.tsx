@@ -1,5 +1,6 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
+import { Card, CardContent } from "../ui/card";
 import {
   CommunityInvolvementSectionProps,
   ContributionItemProps,
@@ -70,6 +71,33 @@ const CommunityInvolvementSection: React.FC<
               description={contribution.description}
             />
           ))}
+        </div>
+
+        {/* Get Involved Card */}
+        <div className="py-30 bg-background">
+          <Card>
+            <CardContent className="pt-12 pb-12 text-center">
+              <h3 className="text-3xl font-semibold text-foreground mb-6">
+                Get Involved
+              </h3>
+              <p className="text-lg font-semibold text-muted-foreground mb-8 max-w-3xl mx-auto">
+                Join our growing community of developers and contributors.
+                Whether you're looking to use our tools or contribute to their
+                development, we welcome collaboration.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-x-10 gap-y-4 justify-center items-center">
+                <a href="https://github.com/spacecorps">
+                  <button className="bg-white text-black px-11 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    Explore GitHub
+                  </button>
+                </a>
+
+                <a href="#" className="text-primary">
+                  Join Our Community
+                </a>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
