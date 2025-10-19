@@ -25,12 +25,12 @@ const ProjectCard: React.FC<ProjectCardProps & { index: number }> = ({
       <div
         className={`${isEven ? "order-2 lg:order-1" : "order-2 lg:order-2"}`}
       >
-        <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg p-4 aspect-video flex items-center justify-center relative overflow-hidden">
+        <div className="bg-gradient-to-br from-gray-900 to-gray-800 aspect-video flex items-center justify-center relative overflow-hidden">
           {image ? (
             <img
               src={image}
               alt={title}
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-cover"
             />
           ) : (
             <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg flex items-center justify-center border border-gray-700">
@@ -123,6 +123,7 @@ const FeaturedProjectsSection: React.FC<FeaturedProjectsSectionProps> = () => {
         "Multi-user access",
       ],
       technologies: ["Ivy Framework", ".NET", "SQL", "React", "AI Tools"],
+      image: "/src/assets/projectCardExample.jpg",
     },
     {
       title: "Healthcare Management Platform",
@@ -145,6 +146,7 @@ const FeaturedProjectsSection: React.FC<FeaturedProjectsSectionProps> = () => {
         "MongoDB",
         "AI Tools",
       ],
+      image: "/src/assets/projectCardExample.jpg",
     },
     {
       title: "E-Commerce Marketplace",
@@ -167,6 +169,7 @@ const FeaturedProjectsSection: React.FC<FeaturedProjectsSectionProps> = () => {
         "PostgreSQL",
         "AI Tools",
       ],
+      image: "/src/assets/projectCardExample.jpg",
     },
   ];
 
