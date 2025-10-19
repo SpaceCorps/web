@@ -12,7 +12,7 @@ const TechDemoCard: React.FC<TechDemoCardProps> = ({
   description,
 }) => {
   return (
-    <Card className="bg-card border-border hover:bg-accent/50 transition-colors">
+    <Card>
       <CardContent className="p-6 text-center">
         <div className="mb-4 flex justify-center">
           <div className="p-3 rounded-full bg-primary/10 text-primary">
