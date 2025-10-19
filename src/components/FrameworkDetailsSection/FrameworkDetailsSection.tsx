@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { Check } from "lucide-react";
+import { CircleCheckBig } from "lucide-react";
 import {
   FrameworkDetailsSectionProps,
   CapabilityListProps,
@@ -20,7 +20,7 @@ const CapabilityList: React.FC<CapabilityListProps> = ({
       <CardContent className="space-y-3">
         {capabilities.map((capability, index) => (
           <div key={index} className="flex items-center gap-3">
-            <Check className="h-4 w-4 text-green-500 flex-shrink-0" />
+            <CircleCheckBig className="h-6 w-6 text-green-500 stroke-3" />
             <span className="text-muted-foreground text-sm">{capability}</span>
           </div>
         ))}
