@@ -4,6 +4,7 @@ import { OpenSourceSection } from "../components/OpenSourceSection";
 import { FeaturedProjectsSection } from "../components/FeaturedProjectsSection";
 import { TechnologyDemosSection } from "../components/TechnologyDemosSection";
 import { FrameworkDetailsSection } from "../components/FrameworkDetailsSection";
+import { CommunityInvolvementSection } from "../components/CommunityInvolvementSection";
 
 const Portfolio: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const Portfolio: React.FC = () => {
         <FeaturedProjectsSection />
         <TechnologyDemosSection />
         <FrameworkDetailsSection />
+        <CommunityInvolvementSection />
       </main>
     </div>
   );
