@@ -1,6 +1,6 @@
 import React from "react";
 import { Badge } from "../ui/badge";
-import { Check } from "lucide-react";
+import { CircleCheckBig } from "lucide-react";
 import {
   FeaturedProjectsSectionProps,
   ProjectCardProps,
@@ -25,12 +25,12 @@ const ProjectCard: React.FC<ProjectCardProps & { index: number }> = ({
       <div
         className={`${isEven ? "order-2 lg:order-1" : "order-2 lg:order-2"}`}
       >
-        <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg p-4 aspect-video flex items-center justify-center relative overflow-hidden">
+        <div className="bg-gradient-to-br from-gray-900 to-gray-800 aspect-video flex items-center justify-center relative overflow-hidden">
           {image ? (
             <img
               src={image}
               alt={title}
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-cover"
             />
           ) : (
             <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg flex items-center justify-center border border-gray-700">
@@ -53,7 +53,7 @@ const ProjectCard: React.FC<ProjectCardProps & { index: number }> = ({
       >
         <div>
           <Badge variant="secondary">{category}</Badge>
-          <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+          <h3 className="font-semibold text-xl text-foreground mb-2 py-2">
             {title}
           </h3>
           <p className="text-muted-foreground mb-6">{description}</p>
@@ -62,25 +62,29 @@ const ProjectCard: React.FC<ProjectCardProps & { index: number }> = ({
         {/* Cost Comparison */}
         <div className="grid grid-cols-2 gap-4 mb-6">
           <div>
-            <p className="text-sm text-muted-foreground mb-1">
+            <p className="text-xs text-muted-foreground mb-1">
               Traditional Cost
             </p>
-            <p className="text-xl font-bold text-red-500">{traditionalCost}</p>
+            <p className="text-md text-red-500 line-through">
+              {traditionalCost}
+            </p>
           </div>
           <div>
-            <p className="text-sm text-muted-foreground mb-1">Our Cost</p>
-            <p className="text-xl font-bold text-green-500">{ourCost}</p>
+            <p className="text-xs text-muted-foreground mb-1">Our Cost</p>
+            <p className="text-md text-green-500">{ourCost}</p>
           </div>
         </div>
 
         {/* Key Features */}
-        <div className="mb-6">
-          <h4 className="font-semibold text-foreground mb-3">Key Features:</h4>
+        <div className="mb-6 py-2">
+          <h4 className="font-semibold text-lg text-foreground mb-3">
+            Key Features:
+          </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             {features.map((feature, index) => (
               <div key={index} className="flex items-center gap-2">
-                <Check className="h-4 w-4 text-green-500 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">{feature}</span>
+                <CircleCheckBig className="h-6 w-6 text-green-500 stroke-3" />
+                <span className="text-md text-muted-foreground">{feature}</span>
               </div>
             ))}
           </div>
@@ -88,7 +92,7 @@ const ProjectCard: React.FC<ProjectCardProps & { index: number }> = ({
 
         {/* Technologies */}
         <div>
-          <h4 className="font-semibold text-foreground mb-3">
+          <h4 className="font-semibold text-lg text-foreground py-2">
             Technologies Used:
           </h4>
           <div className="flex flex-wrap gap-2">
@@ -121,6 +125,7 @@ const FeaturedProjectsSection: React.FC<FeaturedProjectsSectionProps> = () => {
         "Multi-user access",
       ],
       technologies: ["Ivy Framework", ".NET", "SQL", "React", "AI Tools"],
+      image: "/src/assets/projectCardExample.jpg",
     },
     {
       title: "Healthcare Management Platform",
@@ -143,6 +148,7 @@ const FeaturedProjectsSection: React.FC<FeaturedProjectsSectionProps> = () => {
         "MongoDB",
         "AI Tools",
       ],
+      image: "/src/assets/projectCardExample.jpg",
     },
     {
       title: "E-Commerce Marketplace",
@@ -165,6 +171,7 @@ const FeaturedProjectsSection: React.FC<FeaturedProjectsSectionProps> = () => {
         "PostgreSQL",
         "AI Tools",
       ],
+      image: "/src/assets/projectCardExample.jpg",
     },
   ];
 
