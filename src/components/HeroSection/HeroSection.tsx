@@ -29,7 +29,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
       </div>
 
       <div
-        className="absolute left-0 top-0 z-10 pr-8 sm:pr-12 lg:pr-16 py-20 sm:py-32 lg:py-40"
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 pr-8 sm:pr-12 lg:pr-16"
         style={{ paddingLeft: "10%" }}
       >
         <div className="max-w-2xl text-left">
