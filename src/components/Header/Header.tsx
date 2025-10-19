@@ -68,7 +68,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
                 variant="ghost"
                 size="icon"
                 onClick={toggleTheme}
-                className="text-muted-foreground hover:text-foreground"
+                className="text-muted-foreground hover:text-foreground cursor-pointer"
               >
                 {isDark ? (
                   <Sun className="h-5 w-5" />
@@ -85,7 +85,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
               variant="ghost"
               size="icon"
               onClick={toggleTheme}
-              className="text-muted-foreground hover:text-foreground"
+              className="text-muted-foreground hover:text-foreground cursor-pointer"
             >
               {isDark ? (
                 <Sun className="h-5 w-5" />
