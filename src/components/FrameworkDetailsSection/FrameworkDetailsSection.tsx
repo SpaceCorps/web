@@ -11,17 +11,15 @@ const CapabilityList: React.FC<CapabilityListProps> = ({
   capabilities,
 }) => {
   return (
-    <Card className="bg-card border-border">
+    <Card>
       <CardHeader>
-        <CardTitle className="text-xl font-semibold text-foreground">
-          {title}
-        </CardTitle>
+        <CardTitle className="text-2xl text-primary">{title}</CardTitle>
       </CardHeader>
       <CardContent className="space-y-3">
         {capabilities.map((capability, index) => (
-          <div key={index} className="flex items-center gap-3">
+          <div key={index} className="flex items-center gap-5">
             <CircleCheckBig className="h-6 w-6 text-green-500 stroke-3" />
-            <span className="text-muted-foreground text-sm">{capability}</span>
+            <span className="text-muted-foreground text-md">{capability}</span>
           </div>
         ))}
       </CardContent>
