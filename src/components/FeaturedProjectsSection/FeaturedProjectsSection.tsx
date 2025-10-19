@@ -93,7 +93,7 @@ const ProjectCard: React.FC<ProjectCardProps & { index: number }> = ({
           </h4>
           <div className="flex flex-wrap gap-2">
             {technologies.map((tech, index) => (
-              <Badge key={index} variant="outline" className="text-xs">
+              <Badge key={index} variant="outline">
                 {tech}
               </Badge>
             ))}
