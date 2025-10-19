@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
 import { HeroSectionProps } from "./HeroSection.ts";
@@ -66,13 +67,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
             >
               Get Started Today
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="px-8 py-3 text-lg font-semibold bg-primary/10 text-white hover:bg-primary/20"
-            >
-              View Portfolio
-            </Button>
+            <Link to="/portfolio">
+              <Button
+                variant="outline"
+                size="lg"
+                className="px-8 py-3 text-lg font-semibold bg-primary/10 text-white hover:bg-primary/20 cursor-pointer"
+              >
+                View Portfolio
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
