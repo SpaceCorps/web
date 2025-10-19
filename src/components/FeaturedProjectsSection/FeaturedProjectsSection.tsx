@@ -1,6 +1,6 @@
 import React from "react";
 import { Badge } from "../ui/badge";
-import { Check } from "lucide-react";
+import { CircleCheckBig } from "lucide-react";
 import {
   FeaturedProjectsSectionProps,
   ProjectCardProps,
@@ -83,7 +83,7 @@ const ProjectCard: React.FC<ProjectCardProps & { index: number }> = ({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             {features.map((feature, index) => (
               <div key={index} className="flex items-center gap-2">
-                <Check className="h-4 w-4 text-green-500 flex-shrink-0" />
+                <CircleCheckBig className="h-6 w-6 text-green-500 stroke-3" />
                 <span className="text-md text-muted-foreground">{feature}</span>
               </div>
             ))}
