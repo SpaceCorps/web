@@ -1,0 +1,18 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="#1a1a1a"/>
+  
+  <!-- Space theme elements -->
+  <circle cx="16" cy="16" r="12" fill="none" stroke="#00ff88" stroke-width="1.5"/>
+  <circle cx="16" cy="16" r="8" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.6"/>
+  <circle cx="16" cy="16" r="4" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Central star/tech symbol -->
+  <path d="M16 6L18.5 13.5L26 16L18.5 18.5L16 26L13.5 18.5L6 16L13.5 13.5L16 6Z" fill="#00ff88"/>
+  
+  <!-- Small stars -->
+  <circle cx="8" cy="8" r="1" fill="#00ff88" opacity="0.8"/>
+  <circle cx="24" cy="8" r="1" fill="#00ff88" opacity="0.8"/>
+  <circle cx="8" cy="24" r="1" fill="#00ff88" opacity="0.8"/>
+  <circle cx="24" cy="24" r="1" fill="#00ff88" opacity="0.8"/>
+</svg>
