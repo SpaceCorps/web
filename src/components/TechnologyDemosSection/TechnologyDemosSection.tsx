@@ -13,14 +13,12 @@ const TechDemoCard: React.FC<TechDemoCardProps> = ({
 }) => {
   return (
     <Card>
-      <CardContent className="p-6 text-center">
-        <div className="mb-4 flex justify-center">
-          <div className="p-3 rounded-full bg-primary/10 text-primary">
-            {icon}
-          </div>
+      <CardContent className="p-6">
+        <div className="mb-4 ">
+          <div className="rounded-full text-primary py-2">{icon}</div>
         </div>
-        <h3 className="text-lg font-semibold text-foreground mb-2">{title}</h3>
-        <p className="text-muted-foreground text-sm">{description}</p>
+        <h3 className="text-xl text-primary mb-2">{title}</h3>
+        <p className="text-muted-foreground text-md mb-4">{description}</p>
       </CardContent>
     </Card>
   );
@@ -29,32 +27,32 @@ const TechDemoCard: React.FC<TechDemoCardProps> = ({
 const TechnologyDemosSection: React.FC<TechnologyDemosSectionProps> = () => {
   const demos: TechDemoCardProps[] = [
     {
-      icon: <Zap className="h-6 w-6" />,
+      icon: <Zap className="h-12 w-12 stroke-[1.5]" />,
       title: "Real-time Application Generation",
       description: "Watch applications come to life in real-time",
     },
     {
-      icon: <Database className="h-6 w-6" />,
+      icon: <Database className="h-12 w-12 stroke-[1.5]" />,
       title: "Database Schema Creation",
       description: "Automated database design and optimization",
     },
     {
-      icon: <Shield className="h-6 w-6" />,
+      icon: <Shield className="h-12 w-12 stroke-[1.5]" />,
       title: "Authentication System Implementation",
       description: "Complete security implementation in minutes",
     },
     {
-      icon: <Code className="h-6 w-6" />,
+      icon: <Code className="h-12 w-12 stroke-[1.5]" />,
       title: "API Development & Documentation",
       description: "Automatic API creation with full documentation",
     },
     {
-      icon: <Upload className="h-6 w-6" />,
+      icon: <Upload className="h-12 w-12 stroke-[1.5]" />,
       title: "Deployment & Hosting Automation",
       description: "One-click deployment to production",
     },
     {
-      icon: <Users className="h-6 w-6" />,
+      icon: <Users className="h-12 w-12 stroke-[1.5]" />,
       title: "User Management Systems",
       description: "Complete user lifecycle management",
     },
