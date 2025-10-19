@@ -65,7 +65,7 @@ const TechnologyDemosSection: React.FC<TechnologyDemosSectionProps> = () => {
           <h2 className="text-3xl font-semibold text-foreground mb-2">
             Technology Demonstrations
           </h2>
-          <p className="text-lg text-muted-foreground max-w-108 mx-auto">
+          <p className="text-lg font-semibold text-muted-foreground max-w-120 mx-auto">
             Experience the power of our Ivy Framework through interactive
             demonstrations
           </p>
