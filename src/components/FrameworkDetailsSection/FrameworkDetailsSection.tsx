@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { Check } from "lucide-react";
+import { CircleCheckBig } from "lucide-react";
 import {
   FrameworkDetailsSectionProps,
   CapabilityListProps,
@@ -11,17 +11,15 @@ const CapabilityList: React.FC<CapabilityListProps> = ({
   capabilities,
 }) => {
   return (
-    <Card className="bg-card border-border">
+    <Card>
       <CardHeader>
-        <CardTitle className="text-xl font-semibold text-foreground">
-          {title}
-        </CardTitle>
+        <CardTitle className="text-2xl text-primary">{title}</CardTitle>
       </CardHeader>
       <CardContent className="space-y-3">
         {capabilities.map((capability, index) => (
-          <div key={index} className="flex items-center gap-3">
-            <Check className="h-4 w-4 text-green-500 flex-shrink-0" />
-            <span className="text-muted-foreground text-sm">{capability}</span>
+          <div key={index} className="flex items-center gap-5">
+            <CircleCheckBig className="h-6 w-6 text-green-500 stroke-3" />
+            <span className="text-muted-foreground text-md">{capability}</span>
           </div>
         ))}
       </CardContent>
@@ -67,10 +65,10 @@ const FrameworkDetailsSection: React.FC<FrameworkDetailsSectionProps> = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl font-bold text-foreground mb-6">
             Framework & Technology Details
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg font-semibold text-muted-foreground max-w-3xl mx-auto">
             Deep dive into the technology that powers our rapid development
           </p>
         </div>
