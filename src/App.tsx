@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { GilectRoot } from "@rorychad/gilect";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
@@ -34,17 +35,19 @@ function App() {
   };
 
   return (
-    <Router>
-      <div className="min-h-screen bg-background text-foreground">
-        <Header isDark={isDark} toggleTheme={toggleTheme} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <GilectRoot>
+      <Router>
+        <div className="min-h-screen bg-background text-foreground">
+          <Header isDark={isDark} toggleTheme={toggleTheme} />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </GilectRoot>
   );
 }
 
