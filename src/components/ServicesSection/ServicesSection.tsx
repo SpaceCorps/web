@@ -44,7 +44,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -63,7 +63,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = () => {
             return (
               <Card
                 key={index}
-                className="h-full hover:shadow-lg transition-shadow duration-300 border-border/50 bg-card/50 backdrop-blur-sm"
+                className="h-full hover:shadow-lg transition-shadow duration-300 border-border/50"
               >
                 <CardHeader className="pb-4">
                   <IconComponent className="w-10 h-10 text-primary" />

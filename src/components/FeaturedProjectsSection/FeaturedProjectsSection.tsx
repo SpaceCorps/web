@@ -5,6 +5,7 @@ import {
   FeaturedProjectsSectionProps,
   ProjectCardProps,
 } from "./FeaturedProjectsSection.ts";
+import { Card } from "../ui/card";
 
 const ProjectCard: React.FC<ProjectCardProps & { index: number }> = ({
   title,
@@ -20,12 +21,12 @@ const ProjectCard: React.FC<ProjectCardProps & { index: number }> = ({
   const isEven = index % 2 === 0;
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-16">
+    <Card className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-16 p-8 border-border/50">
       {/* Project Image */}
       <div
         className={`${isEven ? "order-2 lg:order-1" : "order-2 lg:order-2"}`}
       >
-        <div className="bg-gradient-to-br from-gray-900 to-gray-800 aspect-video flex items-center justify-center relative overflow-hidden">
+        <div className="bg-gradient-to-br from-gray-900 to-gray-800 aspect-video flex items-center justify-center relative overflow-hidden rounded-xl">
           {image ? (
             <img
               src={image}
@@ -104,7 +105,7 @@ const ProjectCard: React.FC<ProjectCardProps & { index: number }> = ({
           </div>
         </div>
       </div>
-    </div>
+    </Card>
   );
 };
 
@@ -176,7 +177,7 @@ const FeaturedProjectsSection: React.FC<FeaturedProjectsSectionProps> = () => {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-transparent">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">

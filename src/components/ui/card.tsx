@@ -1,13 +1,17 @@
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
+import { GlassPane } from "@rorychad/gilect";
 
 function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
-    <div
+    <GlassPane
+      tintColor="#000000"
+      tintStrength={0.8}
+      distortion={-0.25}
       data-slot="card"
       className={cn(
-        "bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm",
+        "bg-transparent text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm",
         className,
       )}
       {...props}

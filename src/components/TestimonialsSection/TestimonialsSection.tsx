@@ -39,7 +39,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
   };
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -53,7 +53,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="h-full hover:shadow-lg transition-shadow duration-300 border-border/50 bg-card/50 backdrop-blur-sm"
+              className="h-full hover:shadow-lg transition-shadow duration-300 border-border/50"
             >
               <CardContent className="p-6">
                 {/* Stars */}

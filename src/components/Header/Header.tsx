@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { GlassPane } from "@rorychad/gilect";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "../ui/button";
-import { Moon, Sun, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { HeaderProps } from "./Header.ts";
 
-const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
+const Header: React.FC<HeaderProps> = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
@@ -16,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
   ];
 
   return (
-    <GlassPane className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/10">
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/10 bg-background/80 backdrop-blur-md">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center h-16">
           {/* Logo */}
@@ -42,12 +41,8 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
                   to={item.href}
                   className={`transition-colors duration-200 ${
                     location.pathname === item.href
-                      ? `underline decoration-2 underline-offset-4 ${
-                          isDark ? "text-white" : "text-black"
-                        }`
-                      : `hover:opacity-70 ${
-                          isDark ? "text-white" : "text-black"
-                        }`
+                      ? "underline decoration-2 underline-offset-4 text-white"
+                      : "hover:opacity-70 text-white"
                   }`}
                 >
                   {item.label}
@@ -58,35 +53,11 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
             {/* Desktop Actions */}
             <div className="hidden md:flex items-center space-x-4 ml-8">
               <Button size="sm">Get Started</Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={toggleTheme}
-                className="text-muted-foreground hover:text-foreground cursor-pointer"
-              >
-                {isDark ? (
-                  <Sun className="h-5 w-5" />
-                ) : (
-                  <Moon className="h-5 w-5" />
-                )}
-              </Button>
             </div>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-2">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleTheme}
-              className="text-muted-foreground hover:text-foreground cursor-pointer"
-            >
-              {isDark ? (
-                <Sun className="h-5 w-5" />
-              ) : (
-                <Moon className="h-5 w-5" />
-              )}
-            </Button>
             <Button
               variant="ghost"
               size="icon"
@@ -133,7 +104,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
           </div>
         )}
       </div>
-    </GlassPane>
+    </header>
   );
 };
 

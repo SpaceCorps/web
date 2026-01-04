@@ -1,4 +1,1 @@
-export interface HeaderProps {
-  isDark: boolean;
-  toggleTheme: () => void;
-}
+export interface HeaderProps {}

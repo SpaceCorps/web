@@ -38,7 +38,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -57,7 +57,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = () => {
             return (
               <Card
                 key={index}
-                className="text-center p-6 hover:shadow-lg transition-shadow duration-300 border-border/50 bg-card/50 backdrop-blur-sm"
+                className="text-center p-6 hover:shadow-lg transition-shadow duration-300 border-border/50"
               >
                 <CardContent className="p-0">
                   <div className="mb-4 flex justify-center">
