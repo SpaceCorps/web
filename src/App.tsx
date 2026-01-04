@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <GilectRoot backgroundImage={heroBg} renderBackground={true}>
+    <GilectRoot backgroundImage={heroBg} renderBackground={false}>
       <Router>
         <div className="min-h-screen bg-transparent text-foreground">
           <Header />

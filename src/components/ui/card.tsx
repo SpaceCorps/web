@@ -7,7 +7,7 @@ function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <GlassPane
       tintColor="#000000"
-      tintStrength={0.8}
+      tintStrength={0.7}
       distortion={-0.25}
       data-slot="card"
       className={cn(
