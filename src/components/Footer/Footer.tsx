@@ -15,9 +15,15 @@ const Footer: React.FC<FooterProps> = ({}) => {
     { label: "Website", value: "spacecorpstechnology.com", icon: Globe },
     {
       label: "VAT",
-      value: "VAT: EE102897221",
+      value: "VAT: SE559608617201",
       icon: null,
     },
+  ];
+
+  // The legal entities behind the site (public register data).
+  const legalEntities = [
+    "SpaceCorps Technology AB · Org. no. 559608-6172 · Mandelgatan 6, 194 37 Upplands Väsby, Sweden · VAT SE559608617201",
+    "SpaceCorps Technology OÜ · Reg. no. 17317965 · Liiva tee 4, Harkujärve küla, Harku vald, 76912 Harju maakond, Estonia · VAT EE102897221",
   ];
 
   return (
@@ -103,8 +109,13 @@ const Footer: React.FC<FooterProps> = ({}) => {
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 SpaceCorps Technology. All rights reserved.
+            © 2025–2026 SpaceCorps Technology AB. All rights reserved.
           </p>
+          {legalEntities.map((entity) => (
+            <p key={entity} className="text-muted-foreground text-xs mt-2">
+              {entity}
+            </p>
+          ))}
         </div>
       </div>
     </footer>
